@@ -25,6 +25,7 @@ export const getItemById = async (req, res) => {
 
 export const createItem = async (req, res) => {
   try {
+    console.log("Received body:", req.body);
     const newItem = await Item.create(req.body);
     res.status(201).json(newItem);
   } catch (error) {

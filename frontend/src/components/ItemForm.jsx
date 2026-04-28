@@ -25,6 +25,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("Submitting formData:", formData);
     onSubmit({
       ...formData,
       price: Number(formData.price),

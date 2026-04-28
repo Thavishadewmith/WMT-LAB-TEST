@@ -27,6 +27,10 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
+    warrantyTerms: {
+      type: String,
+      default: "",
+    },
   },
   { timestamps: true }
 );
